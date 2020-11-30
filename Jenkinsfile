@@ -22,13 +22,7 @@ pipeline {
                
                bat "mvn package"
             }
-        stage('--- Completed ---') { 
-            steps {
-               
-               bat 'echo "Completed"'
-            }    
+                     
         }
-    }
-  }
-
-}
+      }
+   }
