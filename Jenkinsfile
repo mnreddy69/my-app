@@ -1,11 +1,15 @@
 pipeline {
     agent any 
     stages {
+        
         stage('--- Clean ---') { 
+            
             steps {
+                
                     bat "mvn clean"
             }
         }
+        
         stage('--- Test ---') { 
             steps {
                 
@@ -21,7 +25,7 @@ pipeline {
         stage('--- Completed ---') { 
             steps {
                
-               echo "Completed"
+               bat 'echo "Completed"'
             }    
         }
     }
